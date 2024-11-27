@@ -37,7 +37,7 @@ void CourseSlalom::traitementDossards()
     attribuerDossards(8, 15);
     attribuerDossards(16, 30);
     Course::classerLesParticipantsFIS(ordered);
-    attribuerDossards(30, 100);
+    attribuerDossards(31, 31);
     Course::classerLesParticipantsParDossards(!ordered);
 }
 
@@ -72,7 +72,7 @@ int CourseSlalom::attribuerDossards(int BorneInf, int BorneSup)
     int k = 0;
     for (int i = 0; i < sizeof(DossardAttribue) - BorneInf; i++)
     {
-        if (k > 100)
+        if (k > 31)
         {
             break;
         }
